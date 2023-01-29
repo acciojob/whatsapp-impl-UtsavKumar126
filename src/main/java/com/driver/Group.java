@@ -1,7 +1,5 @@
 package com.driver;
 
-import java.util.Objects;
-
 public class Group {
     private String name;
     private int numberOfParticipants;
