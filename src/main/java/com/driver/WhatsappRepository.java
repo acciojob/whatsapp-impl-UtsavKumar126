@@ -51,7 +51,8 @@ public class WhatsappRepository {
         }
         // If there are 2+ users, the name of group should be "Group count". For example, the name of first group would be "Group 1", second would be "Group 2" and so on.
         else{
-            group=new Group("Group "+customGroupCount++,users.size());
+            this.customGroupCount++;
+            group=new Group("Group "+customGroupCount,users.size());
             groupUserMap.put(group,users);
             adminMap.put(group,users.get(0));
             groupMessageMap.put(group,new ArrayList<>());
